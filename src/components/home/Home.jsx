@@ -15,7 +15,7 @@ function Home() {
             Piece card game. Join the journey, assemble your crew, and become
             the Pirate King!
           </p>
-          <Link to="/cards">
+          <Link to="/cardsPage">
             <button className="bg-blue mb-6 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 transition-colors duration-300">
               Get Started Now!
             </button>

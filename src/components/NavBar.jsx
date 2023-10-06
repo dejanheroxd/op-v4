@@ -32,12 +32,6 @@ function NavBar() {
     return location.pathname === path;
   }
 
-  if (!navActive) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
-
   return (
     <div ref={navbarRef}>
       <nav className="bg-yellow-300 w-full relative justify-between px-2 h-12 flex items-center">
@@ -50,11 +44,13 @@ function NavBar() {
           <List
             onClick={() => toggleNavbar()}
             size={32}
-            className="hover:cursor-pointer mr-1 top-2 right-2 z-50 absolute"
+            className={`${
+              navActive ? "fixed" : ""
+            } hover:cursor-pointer mr-1 top-2 right-2 z-50`}
           />
         </div>
         <div
-          className={`flex flex-col pt-28 duration-500 text-black h-screen w-72 absolute top-0 right-0 bg-yellow-300 text-2xl gap-3 ${
+          className={`flex z-40 flex-col pt-28 duration-500 text-black h-screen w-72 fixed top-0 right-0 bg-yellow-300 text-2xl gap-3 ${
             navActive ? "" : "translate-x-[288px] scale-x-0"
           }`}
         >
@@ -71,9 +67,9 @@ function NavBar() {
           </Link>
           <Link
             className={`${
-              isLinkActive("/cards") ? "bg-yellow-400" : ""
+              isLinkActive("/cardsPage") ? "bg-yellow-400" : ""
             } flex hover:bg-yellow-400 p-1 w-70 rounded-lg mx-4 justify-end items-center gap-2`}
-            to="/cards"
+            to="/cardsPage"
           >
             <div className="flex items-center gap-x-3 pr-3">
               Cards
