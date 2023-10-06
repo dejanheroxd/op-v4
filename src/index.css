@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-blue {
+  color: #1f9cdb;
+}
+
+.bg-blue {
+  background: linear-gradient(to bottom, #62c3f8, #2e62a3);
+}
