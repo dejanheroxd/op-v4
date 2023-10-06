@@ -1,7 +1,9 @@
-import { ShoppingCartSimple } from "phosphor-react";
+import { useContext } from "react";
+import { ShopContext } from "../../context/shop-context";
 
-function CardList(props) {
+function Cards(props) {
   const { id, productName, price, productImage } = props.data;
+  const { cartItems, addToCart, removeFromCart } = useContext(ShopContext);
 
   return (
     <div className="mx-auto">
@@ -23,11 +25,16 @@ function CardList(props) {
       </div>
       <div className="mt-3">
         <button className="border duration-100 hover:bg-black hover:text-white w-full border-black pb-[2px] rounded-md">
-          <div className="flex justify-center items-center gap-x-2">Add</div>
+          <div
+            onClick={() => addToCart(id)}
+            className="flex justify-center items-center gap-x-2"
+          >
+            Add
+          </div>
         </button>
       </div>
     </div>
   );
 }
 
-export default CardList;
+export default Cards;
