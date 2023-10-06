@@ -8,6 +8,8 @@ function NavBar() {
   const location = useLocation();
   const navbarRef = useRef(null);
 
+  window.scrollTo(0, 0);
+
   useEffect(() => {
     function handleOutsideClick(event) {
       if (navActive && !navbarRef.current.contains(event.target)) {
@@ -40,7 +42,7 @@ function NavBar() {
 
   return (
     <div ref={navbarRef}>
-      <nav className="bg-yellow-300  w-full relative justify-between px-2 h-12 flex items-center">
+      <nav className="bg-yellow-300 w-full relative justify-between px-2 h-12 flex items-center">
         <div className="w-24 h-[35px] flex items-center overflow-hidden">
           <Link to="/">
             <img className="h-14 object-cover" src={one_pice} alt="" />
