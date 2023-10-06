@@ -8,8 +8,6 @@ function NavBar() {
   const location = useLocation();
   const navbarRef = useRef(null);
 
-  window.scrollTo(0, 0);
-
   useEffect(() => {
     function handleOutsideClick(event) {
       if (navActive && !navbarRef.current.contains(event.target)) {
@@ -57,7 +55,7 @@ function NavBar() {
         </div>
         <div
           className={`flex flex-col pt-28 duration-500 text-black h-screen w-72 absolute top-0 right-0 bg-yellow-300 text-2xl gap-3 ${
-            navActive ? "" : "translate-x-[288px]"
+            navActive ? "" : "translate-x-[288px] scale-x-0"
           }`}
         >
           <Link
