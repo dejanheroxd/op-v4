@@ -8,7 +8,7 @@ function Home() {
         <div className=" text-center ">
           <p className="font-bold text-2xl text-blue">One Piece Card Game</p>
           <p className="text-3xl py-2 font-bold text-red-500">
-            Embark on an Epic Adventure
+            Embarkooo on an Epic Adventure
           </p>
           <p className="text-xl pb-8 text-gray-700">
             Collect, Battle, and Conquer the Grand Line in the ultimate One
