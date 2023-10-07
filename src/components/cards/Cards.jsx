@@ -42,7 +42,7 @@ function Cards(props) {
           src={productImage}
           alt=""
         />
-        <div className="absolute bottom-0 flex justify-center items-center h-10 bg-black/60 w-full left-0">
+        <div className="absolute hover:cursor-pointer bottom-0 flex justify-center items-center h-10 bg-black/60 w-full left-0">
           <div className="text-white font-semibold">{productName}</div>
         </div>
       </div>

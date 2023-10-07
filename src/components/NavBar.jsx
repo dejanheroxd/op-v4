@@ -1,6 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 import one_pice from "../../src/assets/onepiece.png";
-import { List, House, StackSimple, ShoppingCart } from "phosphor-react";
+import {
+  List,
+  House,
+  StackSimple,
+  ShoppingCart,
+  Handbag,
+} from "phosphor-react";
 import { useContext, useEffect, useRef, useState } from "react";
 import { ShopContext } from "../context/shop-context";
 
@@ -45,12 +51,10 @@ function NavBar() {
         </div>
         <Link to="/cart">
           {(isLinkActive("/cart") || isLinkActive("/cardsPage")) && (
-            <div className="absolute top-[9px] right-16">
-              <ShoppingCart size={29} />
+            <div className="absolute flex  top-[9px] right-[55px]">
+              <Handbag size={28} />
               {cartItemsAmount > 0 ? (
-                <p className="absolute top-[-7px] text-sm right-[-14px] bg-white rounded-full py-[1px] px-[7px]">
-                  {cartItemsAmount}
-                </p>
+                <p className="text-gray-800">{cartItemsAmount}</p>
               ) : (
                 ""
               )}
@@ -67,7 +71,7 @@ function NavBar() {
           />
         </div>
         <div
-          className={`flex z-40 flex-col pt-28 duration-500 text-black h-screen w-72 fixed top-0 right-0 bg-yellow-300 text-2xl gap-3 ${
+          className={`flex z-40 flex-col pt-28 duration-300 text-black h-screen w-72 fixed top-0 right-0 bg-yellow-300 text-2xl gap-3 ${
             navActive ? "" : "translate-x-[288px] scale-x-0"
           }`}
         >

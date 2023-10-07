@@ -29,6 +29,20 @@ function ShopContextProvider(props) {
     return total;
   }
 
+  function setCartItemsAmount(itemId, inputAmount) {
+    setCartItems((prev) => ({ ...prev, [itemId]: inputAmount }));
+  }
+
+  function getPayAmount() {
+    let amount = 0;
+    PRODUCTS.map((product) => {
+      if (cartItems[product.id] > 0) {
+        amount += product.price * cartItems[product.id];
+      }
+    });
+    return amount;
+  }
+
   function getRarity(id, price) {
     for (let product of PRODUCTS) {
       if (product.id === id) {
@@ -52,12 +66,6 @@ function ShopContextProvider(props) {
     setClickedFilterRarity(rarity);
   }
 
-  // function filterCardsByRarity(clickedRarity) {
-  //   const filterdCards = PRODUCTS.filter((product) =>
-  //   product.
-  //   )
-  // }
-
   const contextValue = {
     cartItems,
     addToCart,
@@ -66,6 +74,8 @@ function ShopContextProvider(props) {
     getRarity,
     getClickedRarity,
     clickedFilterRarity,
+    setCartItemsAmount,
+    getPayAmount,
   };
 
   return (
