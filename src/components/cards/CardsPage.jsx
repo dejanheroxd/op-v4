@@ -2,8 +2,12 @@ import Heading from "../Heading";
 import Cards from "./Cards";
 import FilterRarityBar from "./FilterRarityBar";
 import { PRODUCTS } from "../../products";
+import { useContext } from "react";
+import { ShopContext } from "../../context/shop-context";
 
 function CardsPage() {
+  const { clickedRarity, getClickedRarity } = useContext(ShopContext);
+
   return (
     <div>
       <Heading>

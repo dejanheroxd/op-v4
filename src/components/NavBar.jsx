@@ -44,16 +44,18 @@ function NavBar() {
           </Link>
         </div>
         <Link to="/cart">
-          <div className="absolute top-[9px] right-16">
-            <ShoppingCart size={29} />
-            {cartItemsAmount > 0 ? (
-              <p className="absolute top-[-7px] text-sm right-[-14px] bg-white rounded-full py-[1px] px-[7px]">
-                {cartItemsAmount}
-              </p>
-            ) : (
-              ""
-            )}
-          </div>
+          {(isLinkActive("/cart") || isLinkActive("/cardsPage")) && (
+            <div className="absolute top-[9px] right-16">
+              <ShoppingCart size={29} />
+              {cartItemsAmount > 0 ? (
+                <p className="absolute top-[-7px] text-sm right-[-14px] bg-white rounded-full py-[1px] px-[7px]">
+                  {cartItemsAmount}
+                </p>
+              ) : (
+                ""
+              )}
+            </div>
+          )}
         </Link>
         <div>
           <List

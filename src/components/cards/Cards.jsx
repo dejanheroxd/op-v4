@@ -1,9 +1,12 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../../context/shop-context";
 
 function Cards(props) {
   const { id, productName, price, productImage } = props.data;
-  const { cartItems, addToCart, getRarity } = useContext(ShopContext);
+  const { cartItems, addToCart, getRarity, clickedFilterRarity } =
+    useContext(ShopContext);
+  const [showCard, setShowCard] = useState(true);
+
   const rarity = getRarity(id, price);
 
   const cardStyle = {
@@ -14,7 +17,15 @@ function Cards(props) {
     backgroundColor: `var(--${rarity}-color)`,
   };
 
-  return (
+  useEffect(() => {
+    if (clickedFilterRarity && rarity !== clickedFilterRarity) {
+      setShowCard(false);
+    } else {
+      setShowCard(true);
+    }
+  }, [clickedFilterRarity, rarity]);
+
+  return showCard ? (
     <div className="mx-auto">
       <div
         style={cardStyle}
@@ -55,7 +66,7 @@ function Cards(props) {
         </button>
       </div>
     </div>
-  );
+  ) : null;
 }
 
 export default Cards;

@@ -13,6 +13,7 @@ function getDefaultCart() {
 
 function ShopContextProvider(props) {
   const [cartItems, setCartItems] = useState(getDefaultCart());
+  const [clickedFilterRarity, setClickedFilterRarity] = useState("");
 
   function addToCart(itemId) {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
@@ -47,12 +48,24 @@ function ShopContextProvider(props) {
     return "common";
   }
 
+  function getClickedRarity(rarity) {
+    setClickedFilterRarity(rarity);
+  }
+
+  // function filterCardsByRarity(clickedRarity) {
+  //   const filterdCards = PRODUCTS.filter((product) =>
+  //   product.
+  //   )
+  // }
+
   const contextValue = {
     cartItems,
     addToCart,
     removeFromCart,
     calcCartAmount,
     getRarity,
+    getClickedRarity,
+    clickedFilterRarity,
   };
 
   return (
