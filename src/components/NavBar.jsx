@@ -76,6 +76,7 @@ function NavBar() {
           }`}
         >
           <Link
+            onClick={() => toggleNavbar()}
             className={`${
               isLinkActive("/") ? "bg-yellow-400" : ""
             } flex hover:bg-yellow-400 p-1  w-70 rounded-lg mx-4 justify-end items-center gap-2`}
@@ -87,6 +88,7 @@ function NavBar() {
             </div>
           </Link>
           <Link
+            onClick={() => toggleNavbar()}
             className={`${
               isLinkActive("/cardsPage") ? "bg-yellow-400" : ""
             } flex hover:bg-yellow-400 p-1 w-70 rounded-lg mx-4 justify-end items-center gap-2`}
@@ -98,6 +100,7 @@ function NavBar() {
             </div>
           </Link>
           <Link
+            onClick={() => toggleNavbar()}
             className={`${
               isLinkActive("/cart") ? "bg-yellow-400" : ""
             } flex hover:bg-yellow-400 p-1 w-70 rounded-lg mx-4 justify-end items-center gap-2`}

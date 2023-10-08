@@ -23,6 +23,10 @@ function ShopContextProvider(props) {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   }
 
+  function deleteItemFormCart(itemId) {
+    setCartItems((prev) => ({ ...prev, [itemId]: 0 }));
+  }
+
   function calcCartAmount() {
     const values = Object.values(cartItems);
     const total = values.reduce((acc, currentValue) => acc + currentValue, 0);
@@ -76,6 +80,7 @@ function ShopContextProvider(props) {
     clickedFilterRarity,
     setCartItemsAmount,
     getPayAmount,
+    deleteItemFormCart,
   };
 
   return (

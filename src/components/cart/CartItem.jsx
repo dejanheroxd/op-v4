@@ -1,13 +1,25 @@
 import { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
+import { Trash } from "phosphor-react";
 
 function CartItem(props) {
   const { productName, productImage, price, id } = props.data;
-  const { addToCart, removeFromCart, cartItems, setCartItemsAmount } =
-    useContext(ShopContext);
+  const {
+    addToCart,
+    removeFromCart,
+    cartItems,
+    setCartItemsAmount,
+    deleteItemFormCart,
+  } = useContext(ShopContext);
 
   return (
-    <div className="border rounded-md overflow-hidden flex w-80 h-52 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+    <div className="border rounded-md relative overflow-hidden flex w-80 h-52 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+      <p
+        onClick={() => deleteItemFormCart(id)}
+        className="absolute bg-red-100 p-[6px] duration-200 hover:shadow-lg hover:cursor-pointer rounded-full top-9 right-7"
+      >
+        <Trash className="text-red-800" size={17} />
+      </p>
       <img className="w-36 object-fill" src={productImage}></img>
       <div className="flex flex-col ml-3 justify-around">
         <div>
