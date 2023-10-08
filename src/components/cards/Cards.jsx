@@ -3,6 +3,7 @@ import { ShopContext } from "../../context/shop-context";
 
 function Cards(props) {
   const { id, productName, price, productImage } = props.data;
+  const { onTogglePopup } = props;
   const { cartItems, addToCart, getRarity, clickedFilterRarity } =
     useContext(ShopContext);
   const [showCard, setShowCard] = useState(true);
@@ -38,6 +39,7 @@ function Cards(props) {
         }}
       >
         <img
+          onClick={() => onTogglePopup(props.data)}
           className="w-full h-full duration-300 hover:cursor-pointer object-center"
           src={productImage}
           alt=""

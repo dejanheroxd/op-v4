@@ -59,7 +59,7 @@ export const PRODUCTS = [
     price: 4700,
     productImage: product5,
     description:
-      "Dracule Mihawk ist der stärkste Schwertkämpfer der Welt und ein ehemaliges Mitglied der Sieben Kriegsherren des Meeres. Er und Jimbei waren die einzigen Kriegsherren, die keine Teufelsfrucht besaßen. Er hatte einst eine Rivalität mit Shanks, einem der Vier Kaiser der Neuen Welt. Er ist der erste Warlord, der in der Serie gezeigt wird.",
+      "Dracule Mihawk ist der stärkste Schwertkämpfer der Welt und ein ehemaliges Mitglied der Sieben Kriegsherren des Meeres. Er und Jimbei waren die einzigen Kriegsherren, die keine Teufelsfrucht besaßen. Er hatte einst eine Rivalität mit Shanks, einem der Vier Kaiser der Neuen Welt.",
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ export const PRODUCTS = [
     price: 3800,
     productImage: product6,
     description:
-      "Roronoa Zoro ist ein Schwertkämpfer und das erste Mitglied und der Vizekapitän der Strohhutpiraten. Er verwendet den Santoryu-Stil (Drei-Schwert-Stil) des Schwertkampfes und strebt danach, der größte Schwertkämpfer der Welt zu werden. Auf ihn ist ein Kopfgeld von 1.111.000.000 Berry ausgesetzt und er ist einer der elf Supernova-Neulinge der 'Gefährlichsten Generation' der Piraten.",
+      "Roronoa Zoro ist ein Schwertkämpfer und das erste Mitglied und der Vizekapitän der Strohhutpiraten. Er verwendet den Santoryu-Stil (Drei-Schwert-Stil) des Schwertkampfes und strebt danach, der größte Schwertkämpfer der Welt zu werden. Auf ihn ist ein Kopfgeld von 1.111.000.000 Berry ausgesetzt.",
   },
   {
     id: 7,
@@ -83,7 +83,7 @@ export const PRODUCTS = [
     price: 4800,
     productImage: product8,
     description:
-      "Luffy, das Herz der neuen Generation. Er schätzt Freundschaft und Freiheit über alles andere und ist bereit, sich jeder Herausforderung zu stellen, egal wie einschüchternd, um seinen Traum zu verwirklichen. Sein unerschütterlicher Traum, der König der Piraten zu werden, und sein unbezwingbarer Geist inspirieren alle, die seine Abenteuer verfolgen.",
+      "Luffy, das Herz der neuen Generation. Er schätzt Freundschaft und Freiheit über alles andere und ist bereit, sich jeder Herausforderung zu stellen, egal wie einschüchternd, um seinen Traum zu verwirklichen. Sein unbezwingbarer Traum, der König der Piraten zu werden, inspiriert alle, die seine Abenteuer verfolgen.",
   },
   {
     id: 9,
@@ -91,7 +91,7 @@ export const PRODUCTS = [
     price: 4500,
     productImage: product9,
     description:
-      "Akainu ist ein hochrangiger Marineoffizier und einer der Admiräle der Marineflotte. Er steht für gnadenlose Gerechtigkeit und ist bereit, drastische Maßnahmen zu ergreifen, um die Ordnung aufrechtzuerhalten. Was ihn besonders gefährlich macht, ist seine Teufelsfrucht, die es ihm ermöglicht, Magma zu kontrollieren und zerstörerische Angriffe auszuführen. Akainu ist bekannt für seine brutale Entschlossenheit und sein skrupelloses Vorgehen, insbesondere während des Marineford-Krieges.",
+      "Akainu ist ein hochrangiger Marineoffizier und einer der Admiräle der Marineflotte. Er steht für gnadenlose Gerechtigkeit und ist bereit, drastische Maßnahmen zu ergreifen, um die Ordnung aufrechtzuerhalten. Seine Teufelsfrucht, die Magma kontrolliert, verleiht ihm zerstörerische Kräfte.",
   },
   {
     id: 10,
@@ -99,7 +99,7 @@ export const PRODUCTS = [
     price: 3800,
     productImage: product10,
     description:
-      "Doflamingo, mit vollem Namen Donquixote Doflamingo, war ein gefürchteter Pirat und ein Meister der Teufelsfrucht (Ito Ito no Mi), mit der er Fäden kontrollieren konnte. Seine manipulative Natur und geheimnisvolle Vergangenheit machten ihn zu einem faszinierenden Antagonisten, der sowohl die Strohhut-Piraten als auch die Marine herausforderte.Bis er gegen Luffy verlor und jetzt hinter gittern sitzt.",
+      "Doflamingo (Donquixote), war ein gefürchteter Pirat und Teufelsfruchtnutzer (Ito Ito no Mi), der Fäden kontrollieren konnte. Seine manipulative Natur und mysteriöse Vergangenheit machten ihn zu einem faszinierenden Gegner der Strohhut-Piraten. Nach seiner Niederlage gegen Luffy sitzt er nun im Gefängnis.",
   },
   {
     id: 11,
@@ -107,7 +107,7 @@ export const PRODUCTS = [
     price: 3800,
     productImage: product11,
     description:
-      "Kid, auch bekannt als Eustass Kid, ist ein aufstrebender Pirat. Sein rebellischer Geist und seine Teufelsfrucht (Punk Hazard) ermöglichen ihm die Kontrolle über Magnetismus. Kid träumt davon, der König der Piraten zu werden, und sein raues Wesen führt oft zu Konflikten mit anderen, einschließlich Ruffy. Seine markante Erscheinung und Entschlossenheit machen ihn zu einem aufregenden Charakter der neuen Generation.",
+      "Kid, auch als Eustass Kid bekannt, ist ein aufstrebender Pirat mit der Fähigkeit, Magnetismus durch seine Teufelsfrucht (Punk Hazard) zu kontrollieren.Seine Entschlossenheit machen ihn zu einem aufregenden Charakter der neuen Generation. Er strebt danach, der König der Piraten zu werden.",
   },
   {
     id: 12,
@@ -115,7 +115,7 @@ export const PRODUCTS = [
     price: 2500,
     productImage: product12,
     description:
-      "Smoker ist ein respektierter Marine-Vizeadmiral. Seine Teufelsfrucht (Moku Moku no Mi) ermöglicht ihm die Kontrolle über Rauch und macht ihn zu einem schwer fassbaren Gegner. Smoker ist bekannt für seine Gerechtigkeit und seinen Sinn für Pflicht, aber er hat auch eine Ehre und Respekt für das Richtige. Seine unerschütterliche Haltung macht ihn zu einer respektablen Figur.",
+      "Smoker ist ein respektierter Marine-Vizeadmiral. Seine Teufelsfrucht (Moku Moku no Mi) ermöglicht ihm die Kontrolle über Rauch und macht ihn zu einem schwer fassbaren Gegner. Smoker ist bekannt für seine Gerechtigkeit und seinen Sinn für Pflicht, aber er hat auch eine Ehre und Respekt für das Richtige.",
   },
   {
     id: 13,
@@ -123,7 +123,7 @@ export const PRODUCTS = [
     price: 3000,
     productImage: product13,
     description:
-      "Momonosuke, der Erbe des Wano-Landes, ist eine wichtige Figur. Er besitzt die Teufelsfrucht (Funkel Funkel no Mi) und kann sich in einen Drachen verwandeln. Trotz seines jungen Alters zeigt er Mut und Entschlossenheit in seiner Verantwortung für sein Volk und sein Land. Seine Reise mit den Strohhut-Piraten wird seine Rolle weiter gestalten.",
+      "Momonosuke, der Erbe des Wano-Landes, ist eine wichtige Figur. Er besitzt die Teufelsfrucht (Funkel Funkel no Mi) und kann sich in einen Drachen verwandeln. Trotz seines jungen Alters zeigt er Mut in seiner Verantwortung für sein Volk und sein Land.Seine Reise mit den Strohhüten wird sein Schicksal weiter prägen.",
   },
   {
     id: 14,
@@ -131,7 +131,7 @@ export const PRODUCTS = [
     price: 2100,
     productImage: product14,
     description:
-      "Carrot ist ein Mitglied der Mink-Rasse und sie kann sich in einen riesigen Hasen verwandeln, was ihr im Kampf hilft. Ihre fröhliche Persönlichkeit und Abenteuerlust machen sie zu einer liebenswerten Ergänzung der Strohhut-Piraten-Crew. Carrot träumt davon, die Welt zu bereisen und neue Abenteuer zu erleben. Ihre Energie und Begeisterung sind ansteckend.",
+      "Carrot ist ein fröhliches Mitglied der Mink-Rasse mit der Fähigkeit, sich in einen riesigen Hasen zu verwandeln. Sie träumt von Abenteuern und bringt eine ansteckende Energie in die Strohhut-Piraten-Crew ein.",
   },
   {
     id: 15,
@@ -147,7 +147,7 @@ export const PRODUCTS = [
     price: 3000,
     productImage: product16,
     description:
-      "Rob Lucci ist ein ehemaliger Agent der CP9 und ist gefürchtet für seine Teufelsfrucht (Neko Neko no Mi, Modell: Leopard), die ihm übermenschliche Kräfte verleiht. Seine kalte und unnachgiebige Persönlichkeit machte ihn zu einem ernstzunehmenden Gegner der es Luffy schwer zu schaffen machte im kampf von Enies Lobby.",
+      "Rob Lucci, ehemaliger CP9-Agent, nutzt die Neko Neko no Mi (Leopardenmodell) Teufelsfrucht und zeichnet sich durch kalte Entschlossenheit aus. Er war ein ernstzunehmender Gegner für Luffy während des Enies-Lobby-Kampfes.",
   },
   {
     id: 17,
@@ -155,7 +155,7 @@ export const PRODUCTS = [
     price: 1900,
     productImage: product17,
     description:
-      "Usopp, der Scharfschütze der Strohhut-Piraten, ist ein liebenswerter Geschichtenerzähler. Sein Traum ist es, ein wahrer Krieger der Meere zu werden und seine Heimat zu beschützen. Obwohl er mit Ängsten kämpft, zeigt er in entscheidenden Momenten beeindruckenden Mut und Entschlossenheit. Usopp's lebhafte Vorstellungskraft und Humor bringen Spaß und Inspiration in der Crew.",
+      "Usopp, der Scharfschütze der Strohhut-Piraten, träumt davon, ein Krieger der Meere zu werden und seine Heimat zu beschützen. Trotz seiner Ängste zeigt er beeindruckenden Mut und Entschlossenheit in entscheidenden Momenten. Seine lebhafte Vorstellungskraft und Humor bringen Freude und Inspiration in die Crew.",
   },
   {
     id: 18,
@@ -163,7 +163,7 @@ export const PRODUCTS = [
     price: 4600,
     productImage: product18,
     description:
-      "Garp, bekannt als (Der Faustkönig), ist ein Marine-Vizeadmiral und der Großvater von Ruffy. Garp fasziniert durch seine einzigartige Persönlichkeit, seine unglaubliche Stärke und seine zwiespältige Rolle zwischen Familie und Pflicht. Sein Faustkampfstil und moralischer Kompass machen ihn zu einer respektierten und fesselnden Character.",
+      "Garp, bekannt als (Der Faustkönig), ist ein Marine-Vizeadmiral und der Großvater von Ruffy. Garp fasziniert durch seine einzigartige Persönlichkeit, seine unglaubliche Stärke und seine zwiespältige Rolle zwischen Familie und Pflicht. Sein Faustkampfstil und moralischer Kompass machen ihn zu einem fesselnden Character.",
   },
   {
     id: 19,
@@ -171,7 +171,7 @@ export const PRODUCTS = [
     price: 2900,
     productImage: product19,
     description:
-      "Kaku war Mitglied der CP9 und hatte die Teufelsfrucht (Ushi Ushi no Mi, Modell: Giraffe), die es ihm ermöglichte, sich in eine Giraffe zu verwandeln. Kaku zeichnete sich durch sein ungewöhnliches Erscheinungsbild und seinen skurrilen Charakter aus. Seine Fähigkeiten und sein Humor machten ihn zu einer unvergesslichen Character.",
+      "Kaku war Mitglied der CP9 und hatte die Teufelsfrucht (Ushi Ushi no Mi, Modell: Giraffe), die es ihm ermöglichte, sich in eine Giraffe zu verwandeln. Kaku zeichnete sich durch sein ungewöhnliches Erscheinungsbild und seinen skurrilen Charakter aus.",
   },
   {
     id: 20,
@@ -179,7 +179,7 @@ export const PRODUCTS = [
     price: 3000,
     productImage: product20,
     description:
-      "Apoo, auch als (Roar of the Sea) bekannt, ist ein Mitglied der gefährlichen Beasts Pirates und nutzt Musik und Schallwellen als Angriffswaffe, dank seiner Teufelsfrucht (Oto Oto no Mi). Apoo ist bekannt für seine zwielichtige Natur und seine Tendenz, seinen eigenen Interessen zu folgen. Sein musikalischer Stil und seine unvorhersehbare Persönlichkeit machen ihn zu einer einzigartigen und geheimnisvollen person.",
+      "Apoo, Mitglied der Beasts Pirates, nutzt seine Teufelsfrucht, um Musik und Schallwellen als mächtige Waffen einzusetzen. Er ist für seine zwielichtige Natur und die Neigung, seinen eigenen Interessen zu folgen, bekannt. Sein musikalischer Stil und seine unvorhersehbare Persönlichkeit verleihen ihm eine geheimnisvolle Aura.",
   },
   {
     id: 21,

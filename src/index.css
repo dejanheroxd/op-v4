@@ -30,6 +30,7 @@
   --Common-color: rgba(148, 146, 146, 0.8);
   --Uncommon-color: rgba(0, 128, 0, 0.8);
   --Rare-color: rgba(6, 163, 201, 0.8);
-  --Epic-color: rgba(152, 6, 201, 0.8);
+  /* --Epic-color: rgba(152, 6, 201, 0.8); */
+  --Epic-color: rgba(113, 6, 201, 0.8);
   --Legendary-color: rgba(255, 165, 0, 1);
 }
