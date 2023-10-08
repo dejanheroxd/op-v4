@@ -14,6 +14,18 @@ function getDefaultCart() {
 function ShopContextProvider(props) {
   const [cartItems, setCartItems] = useState(getDefaultCart());
   const [clickedFilterRarity, setClickedFilterRarity] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
+
+  function matchesSearchQuery(searchQuery, productName) {
+    const query = searchQuery.toLowerCase();
+    const name = productName.toLowerCase();
+
+    return name.startsWith(query);
+  }
+
+  function getSearchQuery(searchQuery) {
+    setSearchQuery(searchQuery);
+  }
 
   function addToCart(itemId) {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
@@ -81,6 +93,9 @@ function ShopContextProvider(props) {
     setCartItemsAmount,
     getPayAmount,
     deleteItemFormCart,
+    getSearchQuery,
+    searchQuery,
+    matchesSearchQuery,
   };
 
   return (

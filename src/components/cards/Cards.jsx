@@ -4,7 +4,13 @@ import { ShopContext } from "../../context/shop-context";
 function Cards(props) {
   const { id, productName, price, productImage } = props.data;
   const { onTogglePopup } = props;
-  const { addToCart, getRarity, clickedFilterRarity } = useContext(ShopContext);
+  const {
+    addToCart,
+    getRarity,
+    clickedFilterRarity,
+    searchQuery,
+    matchesSearchQuery,
+  } = useContext(ShopContext);
   const [showCard, setShowCard] = useState(true);
 
   const rarity = getRarity(id, price);
@@ -17,13 +23,17 @@ function Cards(props) {
     backgroundColor: `var(--${rarity}-color)`,
   };
 
+  const isMatch = matchesSearchQuery(searchQuery, productName);
+
   useEffect(() => {
     if (clickedFilterRarity && rarity !== clickedFilterRarity) {
+      setShowCard(false);
+    } else if (searchQuery && !isMatch) {
       setShowCard(false);
     } else {
       setShowCard(true);
     }
-  }, [clickedFilterRarity, rarity]);
+  }, [clickedFilterRarity, rarity, searchQuery, isMatch]);
 
   return showCard ? (
     <div className="mx-auto">
