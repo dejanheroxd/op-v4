@@ -6,13 +6,13 @@ function FilterRarityBar() {
   const { getClickedRarity, clickedFilterRarity } = useContext(ShopContext);
 
   return (
-    <div className="flex justify-center w-full mt-8">
+    <div className="flex justify-center w-full">
       <div className="border relative rounded-md border-black w-[335px] text-center flex ">
         <button
           onClick={() => getClickedRarity("Common")}
           className={`${
             clickedFilterRarity === "Common" ? "bg-yellow-300" : ""
-          } border-r w-24 rounded-l-md hover:bg-yellow-300 text-sm border-black px-1`}
+          } border-r w-24 rounded-l-md hover:bg-yellow-300 text-sm border-gray-500 px-1`}
         >
           Common
         </button>
@@ -20,7 +20,7 @@ function FilterRarityBar() {
           onClick={() => getClickedRarity("Uncommon")}
           className={`${
             clickedFilterRarity === "Uncommon" ? "bg-yellow-300" : ""
-          } border-r w-24 hover:bg-yellow-300 text-sm border-black px-1`}
+          } border-r w-24 hover:bg-yellow-300 text-sm border-gray-500 px-1`}
         >
           Uncommon
         </button>
@@ -28,7 +28,7 @@ function FilterRarityBar() {
           onClick={() => getClickedRarity("Rare")}
           className={`${
             clickedFilterRarity === "Rare" ? "bg-yellow-300" : ""
-          } border-r w-24 hover:bg-yellow-300 text-sm border-black px-1`}
+          } border-r w-24 hover:bg-yellow-300 text-sm border-gray-500 px-1`}
         >
           Rare
         </button>
@@ -36,7 +36,7 @@ function FilterRarityBar() {
           onClick={() => getClickedRarity("Epic")}
           className={`${
             clickedFilterRarity === "Epic" ? "bg-yellow-300" : ""
-          } border-r w-24 hover:bg-yellow-300 text-sm border-black px-1`}
+          } border-r w-24 hover:bg-yellow-300 text-sm border-gray-500 px-1`}
         >
           Epic
         </button>
@@ -44,7 +44,7 @@ function FilterRarityBar() {
           onClick={() => getClickedRarity("Legendary")}
           className={`${
             clickedFilterRarity === "Legendary" ? "bg-yellow-300" : ""
-          } border-black rounded-r-md hover:bg-yellow-300 text-sm px-1`}
+          } border-gray-500 rounded-r-md hover:bg-yellow-300 text-sm px-1`}
         >
           Legendary
         </button>

@@ -4,8 +4,7 @@ import { ShopContext } from "../../context/shop-context";
 function Cards(props) {
   const { id, productName, price, productImage } = props.data;
   const { onTogglePopup } = props;
-  const { cartItems, addToCart, getRarity, clickedFilterRarity } =
-    useContext(ShopContext);
+  const { addToCart, getRarity, clickedFilterRarity } = useContext(ShopContext);
   const [showCard, setShowCard] = useState(true);
 
   const rarity = getRarity(id, price);
