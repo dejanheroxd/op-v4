@@ -8,7 +8,7 @@ function CartItem(props) {
 
   return (
     <div className="border rounded-md overflow-hidden flex w-80 h-52 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-      <img className="w-40 object-fill" src={productImage}></img>
+      <img className="w-36 object-fill" src={productImage}></img>
       <div className="flex flex-col ml-3 justify-around">
         <div>
           <div className="font-bold">{productName}</div>

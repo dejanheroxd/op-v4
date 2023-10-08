@@ -56,7 +56,7 @@ function Cards(props) {
         <p>${price}</p>
       </div>
       <div className="mt-3">
-        <button className="border duration-100 hover:bg-black hover:text-white w-full border-black pb-[2px] rounded-md">
+        <button className="border duration-100 active:bg-black active:text-white md:hover:bg-black md:hover:text-white w-full border-black pb-[2px] rounded-md">
           <div
             onClick={() => addToCart(id)}
             className="flex justify-center items-center gap-x-2"
